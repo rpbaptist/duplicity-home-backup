@@ -5,7 +5,7 @@ main() {
   source "./credentials"
 
   duplicity \
-    --verbosity notice \
+    --verbosity info \
     --s3-european-buckets \
     --s3-use-new-style \
     --encrypt-key="$GPG_KEY" \
