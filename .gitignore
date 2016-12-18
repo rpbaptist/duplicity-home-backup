@@ -1,3 +1,3 @@
 .credentials
-inclusion-list
-exclusion-list
+lists/inclusion-list
+lists/exclusion-list
