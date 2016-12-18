@@ -1,4 +1,5 @@
-- **/.config/google-chrome/
-**/.config/
-**/.themes/
+- **/.config/**
+**/.config/dconf/**/*
+**/.config/nemo/**/*
+**/.themes/**/*
 - **/
