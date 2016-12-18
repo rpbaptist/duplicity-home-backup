@@ -1,0 +1,22 @@
+#!/bin/bash
+
+main() {
+  source "./.credentials"
+
+  duplicity verify \
+    --verbosity info \
+    --s3-european-buckets \
+    --s3-use-new-style \
+    --s3-use-server-side-encryption \
+    --include-filelist inclusion-list \
+    "$@" \
+    "$DEST" "$HOME"
+
+  # Reset the ENV variables. Don't need them sitting around
+  unset AWS_ACCESS_KEY_ID
+  unset AWS_SECRET_ACCESS_KEY
+  unset DEST
+  unset PASSPHRASE
+}
+
+main "$@"
