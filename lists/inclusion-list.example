@@ -1,5 +1,5 @@
 - **/.config/**
-**/.config/dconf/**/*
-**/.config/nemo/**/*
-**/.themes/**/*
+**/.config/dconf/*
+**/.config/nemo/*
+**/.themes/*
 - **/
