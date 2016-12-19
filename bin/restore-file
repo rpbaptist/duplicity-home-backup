@@ -3,21 +3,20 @@
 main() {
   source ".credentials"
 
-  if [ $# -lt 3 ]; then echo "Usage $0 <date> <file> <restore-to>"; exit; fi
+  if [ $# -lt 2 ]; then echo "Usage $0 <file> <restore-to>"; exit; fi
 
   duplicity \
     --verbosity info \
     --s3-european-buckets \
     --s3-use-new-style \
     --s3-use-server-side-encryption \
-    --restore-time "$1" \
-    --file-to-restore "$2" \
-    "$DEST" "$3"
+    --file-to-restore "$1" \
+    "$REMOTE" "$2"
 
   # Reset the ENV variables. Don't need them sitting around
   unset AWS_ACCESS_KEY_ID
   unset AWS_SECRET_ACCESS_KEY
-  unset DEST
+  unset REMOTE
   unset PASSPHRASE
 }
 
