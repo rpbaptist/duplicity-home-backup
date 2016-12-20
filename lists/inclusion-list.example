@@ -1,5 +1,35 @@
 - **/.config/**
-**/.config/dconf/*
-**/.config/nemo/*
-**/.themes/*
+- **/Trash/
+- **/.oh-my-zsh/
++ **/.config/autostart/*
++ **/.config/calibre/*
++ **/.config/hexchat/*
++ **/.config/menus/*
++ **/.config/nemo/*
++ **/.config/spotify/*
++ **/.config/sublime-text-3/*
++ **/.config/syncthing-gtk/*
++ **/.config/syncthing/*
++ **/.config/terminix/*
++ **/.config/hub
++ **/.config/libinput-gestures.conf
++ **/.config/redshift.conf
+- **/.cinnamon/spices.cache
++ **/.cinnamon/*
++ **/.cheat/*
++ **/.dconf/*
++ **/.fonts/*
++ **/.zsh/*
++ **/.dircolors
++ **/.gemrc
++ **/.ghci
++ **/.gitconfig
++ **/.gitignore
++ **/.irbrc
++ **/.railsrc
++ **/.rspec
++ **/.sqliterc
++ **/.zsh_history
++ **/.zshenv
++ **/.zshrc
 - **/
