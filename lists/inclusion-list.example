@@ -1,35 +1,24 @@
-- **/.config/**
-- **/Trash/
-- **/.oh-my-zsh/
-+ **/.config/autostart/*
-+ **/.config/calibre/*
-+ **/.config/hexchat/*
-+ **/.config/menus/*
-+ **/.config/nemo/*
-+ **/.config/spotify/*
-+ **/.config/sublime-text-3/*
-+ **/.config/syncthing-gtk/*
-+ **/.config/syncthing/*
-+ **/.config/terminix/*
-+ **/.config/hub
-+ **/.config/libinput-gestures.conf
-+ **/.config/redshift.conf
+**/.config/autostart/**
+**/.config/calibre/**
+**/.config/copyq/**
+**/.config/hexchat/**
+**/.config/keybase/**
+**/.config/menus/**
+**/.config/nemo/**
+**/.config/spotify/**
+**/.config/sublime-text-3/Packages/**
+**/.config/sublime-text-3/Installed Packages/**
+- **/.config/sublime-text-3
+**/.config/terminix/**
+**/.config/hub/**
+**/.config/libinput-gestures.conf
+**/.config/redshift.conf
+- **/.config
+**/.cheat
 - **/.cinnamon/spices.cache
-+ **/.cinnamon/*
-+ **/.cheat/*
-+ **/.dconf/*
-+ **/.fonts/*
-+ **/.zsh/*
-+ **/.dircolors
-+ **/.gemrc
-+ **/.ghci
-+ **/.gitconfig
-+ **/.gitignore
-+ **/.irbrc
-+ **/.railsrc
-+ **/.rspec
-+ **/.sqliterc
-+ **/.zsh_history
-+ **/.zshenv
-+ **/.zshrc
-- **/
+**/.cinnamon/**
+**/.dconf/**
+**/.fonts/**
+**/.shutter/**
+**/.zsh/**
+- **
