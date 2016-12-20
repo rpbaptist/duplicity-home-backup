@@ -1,3 +1,4 @@
 .credentials
 lists/inclusion-list
 lists/exclusion-list
+log/*
