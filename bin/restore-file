@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-  source ".credentials"
+  source "credentials"
 
   if [ $# -lt 2 ]; then echo "Usage $0 <file> <restore-to>"; exit; fi
 

@@ -2,7 +2,7 @@
 
 main() {
   local duplicity_log="$HOME/.duplicity/log/duplicity.log"
-  source ".credentials"
+  source "credentials"
 
   duplicity \
     --verbosity info \
