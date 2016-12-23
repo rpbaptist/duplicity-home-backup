@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-  source "credentials"
+  source "vars/export"
 
   if [ $# -lt 2 ]; then echo "Usage $0 <file> <restore-to>"; exit; fi
 
@@ -11,13 +11,9 @@ main() {
     --s3-use-new-style \
     --s3-use-server-side-encryption \
     --file-to-restore "$1" \
-    "$REMOTE" "$2"
+    "$S3_DUPLICITY_DIR" "$2"
 
-  # Reset the ENV variables. Don't need them sitting around
-  unset AWS_ACCESS_KEY_ID
-  unset AWS_SECRET_ACCESS_KEY
-  unset REMOTE
-  unset PASSPHRASE
+  source "vars/unset"
 }
 
 main "$@"

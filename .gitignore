@@ -1,4 +1,4 @@
-credentials
+vars/export
 lists/inclusion-list
 lists/exclusion-list
 log/*

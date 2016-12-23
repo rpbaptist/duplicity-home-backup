@@ -2,7 +2,7 @@
 
 main() {
   local duplicity_log="$HOME/.duplicity/log/duplicity.log"
-  source "credentials"
+  source "vars/export"
 
   duplicity \
     --verbosity info \
@@ -14,13 +14,9 @@ main() {
     --include-filelist "lists/inclusion-list" \
     --log-file "$duplicity_log" \
     "$@" \
-    "$HOME" "$REMOTE"
+    "$HOME" "$S3_DUPLICITY_DIR"
 
-  # Reset the ENV variables. Don't need them sitting around
-  unset AWS_ACCESS_KEY_ID
-  unset AWS_SECRET_ACCESS_KEY
-  unset REMOTE
-  unset PASSPHRASE
+  source "vars/unset"
 }
 
 main "$@"
