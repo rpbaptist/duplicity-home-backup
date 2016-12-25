@@ -10,6 +10,7 @@ main() {
     --s3-european-buckets \
     --s3-use-new-style \
     --s3-use-server-side-encryption \
+    --force \
     "$S3_DUPLICITY_DIR" "$1"
 
   source "vars/unset"
