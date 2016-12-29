@@ -1,8 +1,9 @@
 #!/bin/bash
 
 main() {
-  local duplicity_log="$HOME/.duplicity/log/duplicity.log"
-  source "vars/export"
+  local duplicity_dir="$HOME/.duplicity"
+  local duplicity_log="$duplicity_dir/log/duplicity.log"
+  source "$duplicity_dir/vars/export"
 
   duplicity \
     --verbosity info \
@@ -11,12 +12,12 @@ main() {
     --s3-use-server-side-encryption \
     --asynchronous-upload \
     --full-if-older-than 7D \
-    --include-filelist "lists/inclusion-list" \
+    --include-filelist "$duplicity_dir/lists/inclusion-list" \
     --log-file "$duplicity_log" \
     "$@" \
     "$HOME" "$S3_DUPLICITY_DIR"
 
-  source "vars/unset"
+  source "$duplicity_dir/vars/unset"
 }
 
 main "$@"

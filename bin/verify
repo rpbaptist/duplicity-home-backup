@@ -1,18 +1,18 @@
 #!/bin/bash
 
 main() {
-  source "vars/export"
+  source "$duplicity_dir/vars/export"
 
   duplicity verify \
     --verbosity info \
     --s3-european-buckets \
     --s3-use-new-style \
     --s3-use-server-side-encryption \
-    --include-filelist "lists/inclusion-list" \
+    --include-filelist "$duplicity_dir/lists/inclusion-list" \
     "$@" \
     "$S3_DUPLICITY_DIR" "$HOME"
 
-  source "vars/unset"
+  source "$duplicity_dir/vars/unset"
 }
 
 main "$@"

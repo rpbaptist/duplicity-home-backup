@@ -1,7 +1,7 @@
 #!/bin/bash
 
 main() {
-  source "vars/export"
+  source "$duplicity_dir/vars/export"
 
   if [ $# -lt 2 ]; then echo "Usage $0 <file> <restore-to>"; exit; fi
 
@@ -13,7 +13,7 @@ main() {
     --file-to-restore "$1" \
     "$S3_DUPLICITY_DIR" "$2"
 
-  source "vars/unset"
+  source "$duplicity_dir/vars/unset"
 }
 
 main "$@"
