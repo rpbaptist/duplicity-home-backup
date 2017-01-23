@@ -1,6 +1,7 @@
 #!/bin/bash
 
 main() {
+  local duplicity_dir="$HOME/.duplicity"
   source "$duplicity_dir/vars/export"
 
   if [ $# -lt 1 ]; then echo "Usage $0 <restore-to>"; exit; fi

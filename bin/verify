@@ -1,6 +1,7 @@
 #!/bin/bash
 
 main() {
+  local duplicity_dir="$HOME/.duplicity"
   source "$duplicity_dir/vars/export"
 
   duplicity verify \
