@@ -1,4 +1,4 @@
 vars/export
 lists/inclusion-list
 lists/exclusion-list
-log/*
+log/duplicity.log
