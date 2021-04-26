@@ -22,8 +22,5 @@ Run `bin/verify`
 
 ### A note on dotfiles
 
-Dotfiles aren't backed up by this script. I spent some time trying to get it to work and wasn't succesful.
+Dotfiles aren't backed up by this script. I opted to use a seperate [dotfiles repo](https://github.com/rpbaptist/dotfiles) instead.
 
-All the while I had the notion that dotfiles might deserve special treatment anyway. So I am leaving those in my ansible repo.
-
-But if you happen to read this and figure it out, please let me know.
